@@ -1,24 +1,10 @@
-# Import WSGI server from Gevent
-from gevent.pywsgi import WSGIServer
-# Import Compress module from Flask-Compress for compress static
-# content (HTML, CSS, JS)
-from flask_compress import Compress
-
-# Import Monkey module from gevent for monkey-patching
-from gevent import monkey
-# Monkey-patching standart Python library for async working
-monkey.patch_all()
-
 from flask import Flask, render_template, request
 import yfinance as yf
 from datetime import datetime as dt
 
 app = Flask(__name__)
 
-# Create Compress with default params
-compress = Compress()
-# Init compress for our Flask app
-compress.init_app(app)
+
 
 
 @app.route('/')
