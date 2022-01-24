@@ -88,6 +88,3 @@ def calculate():
                            afterTax=afterTax)
 
 
-http_server = WSGIServer(('0.0.0.0', 8080), app)
-# Start WSGI server
-http_server.serve_forever()
