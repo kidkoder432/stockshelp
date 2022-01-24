@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Roboto+Mono&display=swap');
+
+details[open] summary ~ * {
+  animation: sweep .5s ease-in-out;
+}
+
+@keyframes sweep {
+  0%    {opacity: 0; transform: translateY(0px)}
+  100%  {opacity: 1; transform: translateY(10px)}
+}
+
+body {
+    padding: 10px;
+    margin: 10px;
+    user-select: none;
+    height: 100%;
+    background: #222222;
+    background-repeat: no-repeat;
+    font-family: "Roboto Mono";
+    color: white;
+
+}
+a {
+    text-decoration: none;
+    color: lightcoral
+}
+
+.secret {
+    color: white
+}
+
+a:hover {
+    font-weight: bold;
+}
+
+button {
+    margin: 2px;
+    font-family: 'Roboto Mono';
+    font-size: 14;
+    border-radius: 5px;
+    border: 2px solid darkcyan;
+    color: lightgray;
+    background-color: #222222;
+    transition: background 200ms, color 200ms;
+
+}
+
+
+
+button:hover {
+    background-color: #444444;
+    color: white;
+}
+
+ol {
+    list-style-type: none;
+}
+
+textarea {
+    width: 100%;
+    border: 2px solid darkcyan;
+    background-color: #222222;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+select, option {
+    margin: 2px;
+    font-family: 'Roboto Mono';
+    font-size: 14;
+    border-radius: 5px;
+    border: 2px solid darkcyan;
+    color: lightgray;
+    background-color: #222222;
+    transition: background 200ms, color 200ms;
+
+}
+
+
+
+select:hover, option:hover {
+    background-color: #444444;
+    color: white;
+}
+
+input {
+    margin: 2px;
+    font-family: 'Roboto Mono';
+    font-size: 14;
+    border-radius: 5px;
+    border: 2px solid darkcyan;
+    color: lightgray;
+    background-color: #222222;
+    transition: background 200ms, color 200ms;
+
+}
+
+
+
+input:hover {
+    background-color: #444444;
+    color: white;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Stock Profit Calculator</title>
+        <link rel='stylesheet' href={{ url_for("static", filename="style.css") }}>
+    </head>
+    <body>
+        <h1>Stock Profit Calculator</h1>
+        <p>Calculate your profit margin for a specific stock here. </p>
+        <br><br>
+        <form action='/calc' method='post'>
+            <label for="ticker">Ticker Symbol (e.g AAPL)</label>            
+            <input type='text' name='ticker' id='ticker'>
+            <br><br>
+            <label for="buyDate">Date of Purchase</label>   
+            <input type='date' name='buyDate' id='buyDate'>
+            <br><br>
+            <label for="shares"># of Shares Bought</label>
+            <input type='number' name='shares' id='shares'>
+            <br><br>
+            <button type='submit'>Calculate Profit</button>
+        </form>
+        <p name='log'>{{ log }}</p>
+        <p name='upDown'>{{ upDown }}</p>
+        <p name='buysell'>{{ buySell }}</p>
+        <p name='profitpershare'>{{ profitPerShare }}</p>
+        <p name='totalprofit'>{{ totalProfit }}</p>
+        <p name='afterTax'>{{ afterTax }}</p>
+
+    </body>
+</html>
